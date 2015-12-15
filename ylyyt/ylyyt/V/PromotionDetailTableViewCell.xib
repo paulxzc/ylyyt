@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="PromotionDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxj-kS-sn2">
+                        <rect key="frame" x="88" y="11" width="278" height="33"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ja-ww-wfl">
+                        <rect key="frame" x="88" y="52" width="278" height="30"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.98753708600997925" green="0.11386197060346603" blue="0.024300085380673409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ig-iW-T64">
+                        <rect key="frame" x="15" y="11" width="65" height="80"/>
+                        <animations/>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="zxj-kS-sn2" secondAttribute="trailing" constant="5" id="0W5-AH-dl7"/>
+                    <constraint firstItem="0ja-ww-wfl" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="5" id="3I5-yF-Qng"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0ja-ww-wfl" secondAttribute="trailing" constant="5" id="6jc-bQ-0Ib"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9ig-iW-T64" secondAttribute="bottom" constant="5" id="DJL-GN-8z8"/>
+                    <constraint firstItem="0ja-ww-wfl" firstAttribute="leading" secondItem="9ig-iW-T64" secondAttribute="trailing" constant="5" id="LW4-6Q-Vkd"/>
+                    <constraint firstItem="9ig-iW-T64" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="LfA-fY-M0o"/>
+                    <constraint firstItem="zxj-kS-sn2" firstAttribute="leading" secondItem="9ig-iW-T64" secondAttribute="trailing" constant="5" id="Tgp-j9-WQH"/>
+                    <constraint firstItem="0ja-ww-wfl" firstAttribute="top" secondItem="zxj-kS-sn2" secondAttribute="bottom" constant="5" id="V9H-6d-VCZ"/>
+                    <constraint firstItem="zxj-kS-sn2" firstAttribute="width" secondItem="9ig-iW-T64" secondAttribute="width" multiplier="3.5" id="Vce-Bw-Xt3"/>
+                    <constraint firstItem="0ja-ww-wfl" firstAttribute="height" secondItem="zxj-kS-sn2" secondAttribute="height" id="f8t-B2-VEx"/>
+                    <constraint firstItem="9ig-iW-T64" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="jz9-hO-dkp"/>
+                    <constraint firstItem="zxj-kS-sn2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="tDP-ad-max"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="activityLabel" destination="0ja-ww-wfl" id="U1b-Fa-bic"/>
+                <outlet property="namelabel" destination="zxj-kS-sn2" id="Ell-aQ-l6N"/>
+                <outlet property="shopImageView" destination="9ig-iW-T64" id="pbz-wa-n62"/>
+            </connections>
+            <point key="canvasLocation" x="308" y="176"/>
+        </tableViewCell>
+    </objects>
+</document>
