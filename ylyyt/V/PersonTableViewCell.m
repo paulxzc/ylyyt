@@ -18,7 +18,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *phoneLabel;
 @property (weak, nonatomic) IBOutlet UILabel *addressLabel;
 
+<<<<<<< HEAD
 @property (nonatomic, strong) UIImage *smallImage;
+=======
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
 - (IBAction)showPop:(id)sender;
 
 @end
@@ -41,6 +44,7 @@
     self.phoneLabel.text = [NSString stringWithFormat:@"联系电话:%@",loginSuccess.UserPhone];
     self.addressLabel.text = [NSString stringWithFormat:@"地址:%@",loginSuccess.UserAddress];
     
+<<<<<<< HEAD
     NSLog(@"zzzzzz");
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"userIcon"] != nil) {
         NSLog(@"yyyyyy");
@@ -52,12 +56,18 @@
     }
     
     
+=======
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
 }
 
 - (void)awakeFromNib {
     // Initialization code
+<<<<<<< HEAD
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(iconRefresh:) name:@"iconRefresh" object:nil];
     NSLog(@"xxxxx");
+=======
+    
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -66,10 +76,17 @@
     // Configure the view for the selected state
 }
 
+<<<<<<< HEAD
 - (void)iconRefresh:(NSNotification *)sender{
     NSLog(@"///////");
     
     self.smallImage = [UIImage imageWithData:sender.object];
+=======
+-(void)showIconPopover:(id)sender forEvent:(UIEvent*)event{
+    
+    
+  
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
     
     
 }

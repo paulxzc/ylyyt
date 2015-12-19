@@ -234,8 +234,11 @@
 		18F54C4B1BDF6E700057D914 /* SlideBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F54C471BDF6E700057D914 /* SlideBarCell.m */; };
 		18F54C4C1BDF6E700057D914 /* SlideBarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F54C481BDF6E700057D914 /* SlideBarCell.xib */; };
 		18F54C4D1BDF6E700057D914 /* SlideTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F54C4A1BDF6E700057D914 /* SlideTabBarView.m */; };
+<<<<<<< HEAD
 		18FED9A71C23FC2700C7D6B8 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FED9A61C23FC2700C7D6B8 /* BaiduMapAPI_Location.framework */; };
 		18FED9A91C23FCA600C7D6B8 /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FED9A81C23FCA600C7D6B8 /* BaiduMapAPI_Search.framework */; };
+=======
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -583,8 +586,11 @@
 		18F54C481BDF6E700057D914 /* SlideBarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlideBarCell.xib; sourceTree = "<group>"; };
 		18F54C491BDF6E700057D914 /* SlideTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideTabBarView.h; sourceTree = "<group>"; };
 		18F54C4A1BDF6E700057D914 /* SlideTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideTabBarView.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		18FED9A61C23FC2700C7D6B8 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
 		18FED9A81C23FCA600C7D6B8 /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
+=======
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -595,12 +601,18 @@
 				18AD0CE01BF06948000F7F21 /* AVFoundation.framework in Frameworks */,
 				18AD0CDE1BF0693D000F7F21 /* AVKit.framework in Frameworks */,
 				182D64401BE74B8B00C814A0 /* MobileCoreServices.framework in Frameworks */,
+<<<<<<< HEAD
 				18FED9A71C23FC2700C7D6B8 /* BaiduMapAPI_Location.framework in Frameworks */,
+=======
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
 				1815E9941BE0A9ED00716D37 /* BaiduMapAPI_Map.framework in Frameworks */,
 				1815E9871BE0A61700716D37 /* CoreTelephony.framework in Frameworks */,
 				1815E9851BE0A60600716D37 /* libsqlite3.0.tbd in Frameworks */,
 				1815E9831BE0A5E800716D37 /* libstdc++.6.0.9.tbd in Frameworks */,
+<<<<<<< HEAD
 				18FED9A91C23FCA600C7D6B8 /* BaiduMapAPI_Search.framework in Frameworks */,
+=======
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
 				1815E9811BE0A5CF00716D37 /* Security.framework in Frameworks */,
 				1815E97F1BE0A5BC00716D37 /* SystemConfiguration.framework in Frameworks */,
 				1815E97D1BE0A5AB00716D37 /* OpenGLES.framework in Frameworks */,
@@ -652,8 +664,11 @@
 		180A48531BE07016001879AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				18FED9A81C23FCA600C7D6B8 /* BaiduMapAPI_Search.framework */,
 				18FED9A61C23FC2700C7D6B8 /* BaiduMapAPI_Location.framework */,
+=======
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
 				18AD0CDF1BF06948000F7F21 /* AVFoundation.framework */,
 				18AD0CDD1BF0693D000F7F21 /* AVKit.framework */,
 				182D643F1BE74B8B00C814A0 /* MobileCoreServices.framework */,

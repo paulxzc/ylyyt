@@ -9,6 +9,7 @@
 #import "MapViewController.h"
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
+<<<<<<< HEAD
 #import <BaiduMapAPI_Location/BMKLocationComponent.h>
 #import <BaiduMapAPI_Search/BMKGeocodeSearch.h>
 
@@ -17,6 +18,12 @@
     BMKMapView *_mapView;
     BMKLocationService * _locService;
     BMKGeoCodeSearch *_search;
+=======
+
+@interface MapViewController ()<BMKMapViewDelegate>
+{
+    BMKMapView *_mapView;
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
 }
 @end
 
@@ -27,6 +34,7 @@
     // Do any additional setup after loading the view from its nib.
     _mapView = [[BMKMapView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     self.view = _mapView;
+<<<<<<< HEAD
     
     //切换为普通地图
     [_mapView setMapType:BMKMapTypeStandard];
@@ -157,6 +165,10 @@
 
 
 
+=======
+}
+
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
 - (void)viewWillAppear:(BOOL)animated
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -173,8 +185,12 @@
 {
     [_mapView viewWillDisappear];
     _mapView.delegate = nil; // 不用时，置nil
+<<<<<<< HEAD
     _search.delegate = nil;
 }
 
 
+=======
+}
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
 @end

@@ -64,8 +64,11 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginRefresh:) name:@"loginRefresh" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(backRefresh:) name:@"backRefresh" object:nil];
+<<<<<<< HEAD
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(iconRefresh:) name:@"iconRefresh" object:nil];
     
+=======
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
     
     self.returnData = [[NSMutableArray alloc] initWithCapacity:0];
     [[AFAppDotNetAPIClient sharedClient] GET:[NSString stringWithFormat:@"http://adobeflash.duapp.com/appYulin/xmlAPI/api_personalCatalog.xml"] parameters:nil success:^(NSURLSessionDataTask *task, NSXMLParser *responseObject) {
@@ -79,6 +82,7 @@
         
         _loginSuccess = [LoginSuccess loginSuccessWithDic:[userDefault objectForKey:@"userInfo"]];
         [self.tableView reloadData];
+<<<<<<< HEAD
 //        if (self.smallImage != nil) {
 //            self.iconImageView.image = self.smallImage;
 //        }
@@ -86,10 +90,15 @@
     }];
     
     
+=======
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    }];
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
 
     
 }
 
+<<<<<<< HEAD
 //- (void)iconRefresh:(NSNotification *)sender{
 //    NSLog(@"///////");
 //    
@@ -99,6 +108,8 @@
 //}
 
 
+=======
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
 - (void)loginRefresh:(NSNotification *)sender{
     self.name = sender.object;
     NSLog(@"loginrefresh:%@",self.name);
@@ -208,7 +219,10 @@
     [userDefaults removeObjectForKey:@"name"];
     [userDefaults removeObjectForKey:@"password"];
     [userDefaults removeObjectForKey:@"userInfo"];
+<<<<<<< HEAD
     [userDefaults removeObjectForKey:@"userIcon"];
+=======
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
     [userDefaults synchronize];
 
     //创建发送通知
@@ -349,7 +363,10 @@
     picker.delegate = self;
     [self presentViewController:picker animated:YES completion:^{
         self.iconImageView = imageView;
+<<<<<<< HEAD
 
+=======
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
     }];
     
 }
@@ -376,6 +393,7 @@
         UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
         self.smallImage = [[ImageTool shareTool] resizeImageToSize:CGSizeMake(self.iconImageView.frame.size.width, self.iconImageView.frame.size.height                                  ) sizeOfImage:image];
         
+<<<<<<< HEAD
         NSData *imageData = UIImagePNGRepresentation(self.smallImage);
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         [userDefaults setObject:imageData forKey:@"userIcon"];
@@ -395,17 +413,45 @@
 //        NSLog(@"=======%@",data);
 //        UIImage *imageFinish = [UIImage imageWithData:data];
 //        self.iconImageView.image = imageFinish;
+=======
+        
+        
+        NSData *imageData = UIImagePNGRepresentation(self.smallImage);
+        
+        
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:imageData forKey:@"userIcon"];
+        
+        [userDefaults synchronize];
+
+        
+        NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"userIcon"];
+        UIImage *imageFinish = [UIImage imageWithData:data];
+
+        self.iconImageView.image = imageFinish;
+        
+       
+        
+        
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
         
         
 
     [picker dismissViewControllerAnimated:YES completion:^{
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
     }];
     }
 }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> f1073a416403924c68e21506c0afbceb4f7d8962
 @end
 
